@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbería Rufino · Córdoba</title>
+<style>
+  body{font-family:system-ui,sans-serif;margin:0;background:#f4f1e9;color:#1d1a16}
+  header{background:#1d2a27;color:#efe9da;padding:40px 24px}
+  h1{margin:0 0 6px;font-size:40px}
+  main{max-width:760px;margin:0 auto;padding:24px;display:grid;gap:28px}
+  .aviso{background:#a87a2a;color:#fff;padding:10px 24px;text-align:center;font-weight:600}
+  .fila{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dotted #bbb}
+  .oferta{border:2px dashed #a87a2a;padding:14px 16px;border-radius:10px;font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- editable:aviso | Aviso arriba de la web (vacaciones, festivos, cierres puntuales). Para mostrarlo, quita el atributo hidden; para quitarlo, vuelve a ponerlo -->
+<div class="aviso" hidden>Sin avisos</div>
+<!-- /editable:aviso -->
+
+<header>
+  <h1>Barbería Rufino</h1>
+  <p>Cortes clásicos y degradados desde 1998.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Horario</h2>
+    <!-- editable:horario | Horario semanal de apertura -->
+    <div class="fila"><span>Lunes</span><span>Cerrado</span></div>
+    <div class="fila"><span>Martes a viernes</span><span>9:30 – 13:30 · 17:00 – 20:30</span></div>
+    <div class="fila"><span>Sábado</span><span>9:00 – 14:00</span></div>
+    <div class="fila"><span>Domingo</span><span>Cerrado</span></div>
+    <!-- /editable:horario -->
+  </section>
+
+  <section>
+    <h2>Precios</h2>
+    <!-- editable:precios | Lista de servicios con su precio -->
+    <div class="fila"><span>Corte clásico</span><span>12 €</span></div>
+    <div class="fila"><span>Degradado</span><span>13 €</span></div>
+    <div class="fila"><span>Arreglo de barba</span><span>8 €</span></div>
+    <div class="fila"><span>Corte + barba</span><span>18 €</span></div>
+    <!-- /editable:precios -->
+  </section>
+
+  <section>
+    <h2>Oferta</h2>
+    <!-- editable:oferta | Oferta o promoción actual. Si no hay, poner el texto: Ahora mismo no hay ofertas. -->
+    <p class="oferta">Martes y miércoles: corte + barba a 15 €</p>
+    <!-- /editable:oferta -->
+  </section>
+</main>
+
+</body>
+</html>
